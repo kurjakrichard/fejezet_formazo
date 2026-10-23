@@ -1,0 +1,16 @@
+[project]
+name = "fejezet-formazo"
+version = "0.1.0"
+description = "Fejezetcímek formázása Címsor 1 stílussal .doc/.docx/.odt fájlokban, .odt kimenettel"
+requires-python = ">=3.10"
+dependencies = ["python-docx>=1.1"]
+
+[project.scripts]
+fejezet-formazo = "fejezet_formazo.main:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["fejezet_formazo"]
